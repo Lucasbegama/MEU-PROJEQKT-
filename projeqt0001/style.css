@@ -1,0 +1,40 @@
+/*confings the site */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font: normal 20pt Arial;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: "A1 A1";
+    background-image: url('img/img006.1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    grid-area: "A1";
+    grid-column: 1/5;
+    background-image: url('img/img006.8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 30px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+    box-shadow: 2px 2px 32px 4px ;
+    height: 800px;
+    border-radius: 20px;
+    
+}
