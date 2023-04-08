@@ -30,11 +30,58 @@ main{
     margin-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
     align-content: start;
     box-shadow: 2px 2px 32px 4px ;
     height: 800px;
-    border-radius: 20px;
+    border-radius: 20px;  
+    gap: 100px;
+    flex-wrap: wrap;
+   
+}
+header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 50%;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+}
+.logo{
+    color: white;
+    text-align: start;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    list-style: none;
+    padding: 30px;
+    margin: 20px;
+
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font: normal 19pt Arial;
+    text-shadow: 2px 2px 5px black;
+   
     
+}
+.button > input{
+    background-color: red;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    margin-left: 3%;
 }
