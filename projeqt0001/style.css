@@ -22,6 +22,7 @@ main{
     grid-column: 1/5;
     grid-row: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +30,10 @@ main{
     margin: auto;
     margin-top: 2%;
     padding: 40px;
-    box-shadow: 2px 30px 20px 1px black;
+    box-shadow: 2px 2px 100px 40px black;
+    outline-style: solid;
+    outline-color: rgb(119, 68, 68);
+    margin: 50px;
 }
 header{
     display: flex;
@@ -97,9 +101,7 @@ li a{
     color: white;
     font-size: 1.5rem;
     margin-bottom: 10px;
-   
-   
-    
+    flex-wrap: wrap; 
 }
 #menu_bar{
     display: none;
@@ -137,6 +139,11 @@ li a{
 p{
     color: white;
     margin: 10px;
+    font: normal 30px Arial;
+    text-align: justify;
+    text-indent: 5px;
+    word-spacing: -1px;
+    white-space: wrap;
 }
 .videos{
     display: flex;
@@ -160,7 +167,19 @@ p{
 @media screen and ( min-width: 1024px){
     .logo{
         margin: auto;
-        font-size: 5rem;
+        font-size: 
+        6rem;
     }
     
+}
+@media screen and (min-width:360px) {
+    main{
+        margin: 20px;
+    }
+}
+@media screen and (max-width:375px) {
+    main{
+        margin: 20px;
+        padding:10px ;
+    }
 }
