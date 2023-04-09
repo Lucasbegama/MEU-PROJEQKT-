@@ -28,8 +28,8 @@ main{
     align-content: center;
     margin: auto;
     margin-top: 2%;
-    padding: 3%;
-    box-shadow: 2px 3px 20px 1px black;
+    padding: 40px;
+    box-shadow: 2px 30px 20px 1px black;
 }
 header{
     display: flex;
@@ -42,9 +42,12 @@ header{
 
 .logo{
     color: white;
-    text-align: center;
-    margin: auto;
-    font-size: 70pt;
+    text-align:center;
+    font-size: auto;
+    font-family: 'marti';
+    text-shadow: 20px 10px 10px black;
+    opacity: 0.7;
+    filter: brightness(80%);
 }
 hr{
     width:auto;
@@ -57,11 +60,30 @@ ul{
     align-content: center;
     gap: 20px;
     list-style: none;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin: 10px;
+    padding: 10px;
+    margin-left:auto;
+    border-radius: 20px;
 }
 li a{
     text-decoration: none;
     color: white;
+    font-size: 15px;
 
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    gap: 10px;
+    text-align: center;
+    padding: 15px;
 }
 .button > input{
     background-color: red;
@@ -75,6 +97,9 @@ li a{
     color: white;
     font-size: 1.5rem;
     margin-bottom: 10px;
+   
+   
+    
 }
 #menu_bar{
     display: none;
@@ -85,6 +110,8 @@ li a{
     border-radius: 10px;
     box-shadow: 2px 3px 10px 5px black;
     cursor: pointer;
+    margin-top: 4%;
+    z-index: 10;
 }
 #open_menu:hover{
        background-color: red;
@@ -104,4 +131,36 @@ li a{
     color: black;
     cursor: pointer;
     display: none;
+    margin-top: 4%;
+    
+}
+p{
+    color: white;
+    margin: 10px;
+}
+.videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: 20px;
+    border-radius: 20px;
+}
+.paragrafos{
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+}
+@font-face {
+    font-family: 'marti';
+    src: url('font/Doctor\ Glitch.otf');
+}
+@media screen and ( min-width: 1024px){
+    .logo{
+        margin: auto;
+        font-size: 5rem;
+    }
+    
 }
