@@ -76,3 +76,32 @@ li a{
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
+#menu_bar{
+    display: none;
+}
+#open_menu{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px 5px black;
+    cursor: pointer;
+}
+#open_menu:hover{
+       background-color: red;
+       color: white;
+       padding: 10px;
+       border-radius: 100%;
+       box-shadow: 1px 1px 30px 1px rgb(5, 0, 0);
+       color: black;
+       cursor: pointer;
+}
+#close{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 30px 1px white;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
